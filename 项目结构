@@ -1,0 +1,12 @@
+monitor-platform/
+├── app/
+│   ├── main.py                # FastAPI核心服务
+│   ├── models.py              # 数据库模型
+│   ├── schemas.py             # Pydantic数据验证
+│   ├── utils.py               # 工具函数（IPMI/SNMP扫描）
+│   └── discover.py            # 自动发现脚本
+├── requirements.txt
+├── Dockerfile
+├── docker-compose.yml
+└── data/
+    └── monitor.db             # SQLite数据库（默认存储路径）
